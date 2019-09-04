@@ -14,7 +14,6 @@ const Layout = props => {
           <NavItem routeTo="/" text="Home" />
           <NavItem routeTo="/resume" text="Resume" />
           <NavItem routeTo="/contact" text="Contact" />
-          <NavItem routeTo="/about" text="About Me" />
         </Toolbar>
       </AppBar>
       {children}
