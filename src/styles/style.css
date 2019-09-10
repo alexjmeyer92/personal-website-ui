@@ -17,12 +17,12 @@ body {
 }
 
 .nav-bar {
-  background-color: #ffffff;
+  background-color: rgb(0, 0, 0);
   /* could you set opacity to 0 to get an image to show through */
 }
 
 .nav-item {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 0px 10px;
   /* This allows the link to take up the full height of the navbar */
   line-height: 64px;
