@@ -10,7 +10,6 @@ const Layout = props => {
     <div>
       <AppBar position="static" color="default">
         <Toolbar className="nav-bar">
-          {/* <img src={LabsBanner} alt="Apollo Labs Banner" height="64px" /> */}
           <NavItem routeTo="/" text="Home" />
           <NavItem routeTo="/resume" text="Resume" />
           <NavItem routeTo="/contact" text="Contact" />

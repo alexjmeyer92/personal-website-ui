@@ -1,46 +1,15 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
+import ResumeItems from '../components/Resume/ResumeItems';
+import Layout from '../components/Layout/Layout';
 
 const Resume = () => {
   return (
-    <div>
+    <Layout>
+      <ResumeItems />
       <h1>
-        Interactive resume / timeline will go here (potentially use react-reveal
-        for scroll animation)
+        Conditionally render resume content based on what is clicked above
       </h1>
-      <Fade left>
-        <h1>Hello Resume Page</h1>
-      </Fade>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Fade right>
-        <h1>Some other text</h1>
-      </Fade>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <Fade left>
-        <h1>one more area of text</h1>
-      </Fade>
-    </div>
+    </Layout>
   );
 };
 
