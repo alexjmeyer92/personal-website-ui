@@ -1,8 +1,8 @@
 import React from 'react';
 import makeStyles from '@material-ui/core/styles/makeStyles';
-import ResumeItems from '../components/Resume/ResumeItems';
 import Layout from '../components/Layout/Layout';
 import BackgroundImage from '../assets/background_image.jpg';
+import ResumeBody from '../components/Resume/ResumeBody';
 
 const useStyles = makeStyles({
   bg: {
@@ -24,10 +24,7 @@ const Resume = () => {
   return (
     <Layout>
       <div className={classes.bg}>
-        <ResumeItems />
-        <h1 style={{ color: 'white' }}>
-          Conditionally render resume content based on what is clicked above
-        </h1>
+        <ResumeBody />
       </div>
     </Layout>
   );

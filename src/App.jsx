@@ -7,12 +7,12 @@ import Contact from './views/Contact';
 import GlobalContext from './components/Context/GlobalContext';
 
 const App = () => {
-  const [contextValues, setContextValues] = React.useState({
-    resumeSelection: null,
+  const [values, setValues] = React.useState({
+    resumeSelection: '',
   });
 
   return (
-    <GlobalContext.Provider vlaue={{ contextValues, setContextValues }}>
+    <GlobalContext.Provider value={{ values, setValues }}>
       <Router primary={false}>
         <Home path="/" />
         <Resume path="/resume" />

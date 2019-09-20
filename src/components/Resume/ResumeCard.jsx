@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import GlobalContext from '../Context/GlobalContext';
 import ResumeImage from '../../assets/night_sky.jpeg';
 
 const useStyles = makeStyles({
@@ -21,14 +22,22 @@ const ResumeCard = props => {
 
   const { cardText, cardValue } = props;
 
-  const loggerText = `I clicked the card action button from ${cardValue}`;
+  // const loggerText = `I clicked the card action button from ${cardValue}`;
+
+  const {
+    values: contextValues,
+    setValues: setContextValues,
+  } = React.useContext(GlobalContext);
 
   return (
     <Card>
       <CardActionArea
         onClick={event => {
           event.preventDefault();
-          console.log(loggerText);
+          setContextValues({
+            ...contextValues,
+            resumeSelection: cardValue,
+          });
         }}
       >
         <CardMedia

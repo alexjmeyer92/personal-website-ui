@@ -14,9 +14,6 @@ const useStyles = makeStyles({
 });
 
 const ResumeItems = () => {
-  // <Slide left>
-  //   <h1>Hello Resume Page</h1>
-  // </Slide>;
   const classes = useStyles();
 
   return (
