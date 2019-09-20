@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   media: {
     height: 140,
   },
-  cardText: {
+  cardInfo: {
     height: 50,
   },
 });
@@ -19,11 +19,18 @@ const useStyles = makeStyles({
 const ResumeCard = props => {
   const classes = useStyles();
 
-  const { cardText } = props;
+  const { cardText, cardValue } = props;
+
+  const loggerText = `I clicked the card action button from ${cardValue}`;
 
   return (
     <Card>
-      <CardActionArea>
+      <CardActionArea
+        onClick={event => {
+          event.preventDefault();
+          console.log(loggerText);
+        }}
+      >
         <CardMedia
           className={classes.media}
           image={ResumeImage}
@@ -34,7 +41,7 @@ const ResumeCard = props => {
             gutterBottom
             variant="h5"
             component="h2"
-            className={classes.cardText}
+            className={classes.cardInfo}
           >
             {cardText}
           </Typography>
