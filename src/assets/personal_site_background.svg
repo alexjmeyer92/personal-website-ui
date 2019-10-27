@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>personal_site_background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="30.2157559 50.9843751 70.0093363 155.314249 112.083351 50.9843751 121.661176 50.9843751 121.661176 217 115.504003 217 115.504003 136.272622 115.732046 59.3079607 72.7458576 163.409791 67.0447716 163.409791 27.2511912 60.4481779 27.3652129 136.272622 27.3652129 217 21.20804 217 21.20804 50.9843751"></polygon>
+        <path d="M62.1346407,0.984375063 L116.523001,167 L110.137785,167 L93.832679,117.400552 L23.2532341,117.400552 L7.06214976,167 L0.67693342,167 L55.0652941,0.984375063 L62.1346407,0.984375063 Z M58.5999674,9.42198237 L25.1916033,111.243379 L91.8943098,111.243379 L58.5999674,9.42198237 Z" id="path-2"></path>
+    </defs>
+    <g id="personal_site_background" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#09AA86" opacity="0.5" x="0" y="0" width="1440" height="1024"></rect>
+    </g>
+</svg>
