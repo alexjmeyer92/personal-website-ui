@@ -32,7 +32,7 @@ const ResumeItems = () => {
         mountOnEnter
         unmountOnExit
       >
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <ResumeCard
             cardText="Product Management"
             cardValue="productManagement"
@@ -46,7 +46,7 @@ const ResumeItems = () => {
         mountOnEnter
         unmountOnExit
       >
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <ResumeCard
             cardText="Software Engineering"
             cardValue="softwareEngineering"
@@ -60,7 +60,7 @@ const ResumeItems = () => {
         mountOnEnter
         unmountOnExit
       >
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <ResumeCard cardText="Data & Analytics" cardValue="dataAnalytics" />
         </Grid>
       </Slide>
@@ -71,7 +71,7 @@ const ResumeItems = () => {
         mountOnEnter
         unmountOnExit
       >
-        <Grid item xs={12} md={3}>
+        <Grid item xs={6} md={3}>
           <ResumeCard cardText="Supply Chain" cardValue="supplyChain" />
         </Grid>
       </Slide>

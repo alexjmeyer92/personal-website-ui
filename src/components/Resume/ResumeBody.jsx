@@ -29,7 +29,7 @@ const ResumeBody = () => {
       {contextValues.resumeSelection ? (
         <ResumeDetailCard />
       ) : (
-        <h1 style={{ color: 'white' }}>Click Above To See More</h1>
+        <h1 style={{ color: 'Black' }}>Click Above To See More</h1>
       )}
     </div>
   );

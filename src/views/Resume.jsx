@@ -7,12 +7,14 @@ const useStyles = makeStyles({
   bg: {
     height: '100%',
     width: '100%',
+    overflow: 'scroll',
     backgroundColor: 'white',
     position: 'fixed',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
+    paddingBottom: '10px',
   },
 });
 
