@@ -1,33 +1,23 @@
 import React from 'react';
-import {
-  CircularProgressbarWithChildren,
-  buildStyles,
-} from 'react-circular-progressbar';
-import RadialSeparators from './RadialSeparator';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 
+// https://codesandbox.io/s/vymm4oln6y
 const SkillGuage = props => {
   const { guageValue } = props;
   return (
-    <div>
-      <CircularProgressbarWithChildren
+    <div style={{ height: '45px', width: '45px' }}>
+      <CircularProgressbar
         value={guageValue}
-        text={`${guageValue}%`}
-        strokeWidth={10}
+        text={''}
+        background
+        backgroundPadding={6}
         styles={buildStyles({
-          strokeLinecap: 'butt',
+          backgroundColor: '#3e98c7',
+          textColor: '#fff',
+          pathColor: '#fff',
+          trailColor: 'transparent',
         })}
-      >
-        <RadialSeparators
-          count={12}
-          style={{
-            background: '#fff',
-            width: '2px',
-            // This needs to be equal to props.strokeWidth
-            height: `${10}%`,
-          }}
-        />
-      </CircularProgressbarWithChildren>
-      ;
+      />
     </div>
   );
 };
