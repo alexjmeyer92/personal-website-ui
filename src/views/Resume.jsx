@@ -15,13 +15,13 @@ const Resume = () => {
             deep supply chain experience. I have a background in Inventory
             Mangement and Supply Chain Analytics. I have managed inventory and
             P&L's for retail businesses with more than $100,000,000 in annual
-            sales and helped to stand up a network forecasting and S&OP fucntion
-            at Target. I lead teams building next generation supply chain
+            sales and helped to stand up a network planning and S&OP fucntion at
+            Target. I lead teams building next generation supply chain
             technology products that enable highly integrated, collaborative,
-            and precise management of the First, Middle, and Final mile of
-            Target's global supply chain. I am passionate about solving complex
-            problems and building diverse teams that are rooted in continuous
-            learning, and collaborative problem solving.
+            and precise management of the First, Middle, and Final mile of the
+            global supply chain. I am passionate about solving complex problems
+            and building diverse teams that are rooted in continuous learning,
+            and collaborative problem solving.
           </h3>
         </Grid>
         <Grid item xs={4}>

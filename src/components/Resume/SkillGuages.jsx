@@ -1,21 +1,20 @@
 import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 // https://codesandbox.io/s/vymm4oln6y
 const SkillGuage = props => {
   const { guageValue } = props;
   return (
-    <div style={{ height: '45px', width: '45px' }}>
+    <div style={{ height: '60px', width: '60px' }}>
       <CircularProgressbar
         value={guageValue}
-        text={''}
-        background
-        backgroundPadding={6}
+        circleRatio={0.75}
         styles={buildStyles({
-          backgroundColor: '#3e98c7',
-          textColor: '#fff',
-          pathColor: '#fff',
-          trailColor: 'transparent',
+          rotation: 1 / 2 + 1 / 8,
+          strokeLinecap: 'round',
+          trailColor: '#CED7D6',
+          pathColor: '#05CF18',
         })}
       />
     </div>
