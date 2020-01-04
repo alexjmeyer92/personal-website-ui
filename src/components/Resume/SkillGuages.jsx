@@ -2,6 +2,8 @@ import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+// docs and code sandbox for react progress bar library
+// https://github.com/kevinsqi/react-circular-progressbar
 // https://codesandbox.io/s/vymm4oln6y
 const SkillGuage = props => {
   const { guageValue } = props;

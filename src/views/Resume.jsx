@@ -2,7 +2,7 @@ import React from 'react';
 // import makeStyles from '@material-ui/core/styles/makeStyles'
 import Grid from '@material-ui/core/Grid';
 import Layout from '../components/Layout/Layout';
-import headshot from '../assets/alex_headshot.jpeg';
+// import headshot from '../assets/alex_headshot.jpeg';
 import SkillGuage from '../components/Resume/SkillGuages';
 
 const Resume = () => {
@@ -25,7 +25,7 @@ const Resume = () => {
           </h3>
         </Grid>
         <Grid item xs={4}>
-          <img src={headshot} height="350px" width="350px" alt="" />
+          {/* <img src={headshot} height="350px" width="350px" alt="" /> */}
         </Grid>
         <Grid container xs={12}>
           <Grid item xs={12}>

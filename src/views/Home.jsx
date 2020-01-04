@@ -2,10 +2,10 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import { makeStyles } from '@material-ui/core/styles';
 import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
+// import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import BackgroundImage from '../assets/personal_site_background.svg';
-import PersonalLogo from '../assets/box_with_arrow_logo.svg';
+// import BackgroundImage from '../assets/personal_site_background.svg';
+// import PersonalLogo from '../assets/box_with_arrow_logo.svg';
 import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles({
@@ -27,13 +27,13 @@ const useStyles = makeStyles({
   bg: {
     height: '100%',
     width: '100%',
-    backgroundColor: 'white',
+    backgroundColor: 'lightgrey',
     position: 'fixed',
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
-    backgroundImage: `url(${BackgroundImage})`,
+    // backgroundImage: `url(${BackgroundImage})`,
   },
 });
 
@@ -44,23 +44,20 @@ const Home = () => {
       <Card className={classes.card}>
         <Grid container>
           <Grid item xs={12} md={8}>
-            <img
+            {/* <img
               src={PersonalLogo}
               className={classes.logo}
               alt="Alex Meyer Logo"
-            />
+            /> */}
+            <h1>Maybe some sort of dope logo should go here???</h1>
           </Grid>
           <Grid item xs={12} md={4}>
             <h1>Alex Meyer</h1>
           </Grid>
         </Grid>
-
-        <CardContent className={classes.cardBottom}>
-          Product Manager || Software Engineer || Supply Chain Analytics Expert
-        </CardContent>
         <CardActions className={classes.cardBottom}>
           <Button size="small" className={classes.button} href="/resume">
-            Interactive Resume
+            Resume
           </Button>
           <Button size="small" className={classes.button} href="/contact">
             Contact Me
