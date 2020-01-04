@@ -43,16 +43,8 @@ const Home = () => {
     <div className={classes.bg}>
       <Card className={classes.card}>
         <Grid container>
-          <Grid item xs={12} md={8}>
-            {/* <img
-              src={PersonalLogo}
-              className={classes.logo}
-              alt="Alex Meyer Logo"
-            /> */}
-            <h1>Maybe some sort of dope logo should go here???</h1>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <h1>Alex Meyer</h1>
+          <Grid item xs={12}>
+            <h1 style={{ color: 'white' }}>|| Alex Meyer ||</h1>
           </Grid>
         </Grid>
         <CardActions className={classes.cardBottom}>

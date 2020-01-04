@@ -76,7 +76,7 @@ const Resume = () => {
           </Grid>
           <Grid item xs={1}>
             <SkillGuage guageValue={100} />
-            <p>Roadmapping</p>
+            <p>Strategy / Roadmapping</p>
           </Grid>
           <Grid item xs={1}>
             <SkillGuage guageValue={90} />

@@ -9,14 +9,22 @@ const SkillGuage = props => {
   const { guageValue } = props;
   return (
     <div style={{ height: '60px', width: '60px' }}>
-      <CircularProgressbar
+      {/* <CircularProgressbar
         value={guageValue}
         circleRatio={0.75}
+        strokeWidth={12}
         styles={buildStyles({
           rotation: 1 / 2 + 1 / 8,
           strokeLinecap: 'round',
           trailColor: '#CED7D6',
           pathColor: '#05CF18',
+        })}
+      /> */}
+      <CircularProgressbar
+        value={guageValue}
+        strokeWidth={50}
+        styles={buildStyles({
+          strokeLinecap: 'butt',
         })}
       />
     </div>
