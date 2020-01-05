@@ -10,7 +10,7 @@ const Resume = () => {
     <Layout>
       <Grid container spacing={2} style={{ margin: '10px' }}>
         <Grid item xs={8}>
-          <h3>
+          <p>
             My Name is Alex Meyer, I am a product and technology leader with
             deep supply chain experience. I have a background in Inventory
             Mangement and Supply Chain Analytics. I have managed inventory and
@@ -22,14 +22,14 @@ const Resume = () => {
             global supply chain. I am passionate about solving complex problems
             and building diverse teams that are rooted in continuous learning,
             and collaborative problem solving.
-          </h3>
+          </p>
         </Grid>
         <Grid item xs={4}>
           {/* <img src={headshot} height="350px" width="350px" alt="" /> */}
         </Grid>
         <Grid container xs={12}>
           <Grid item xs={12}>
-            <h3>Technical Skills</h3>
+            <h2>Technical Skills</h2>
           </Grid>
           <Grid item xs={1}>
             <SkillGuage guageValue={95} />
@@ -68,7 +68,7 @@ const Resume = () => {
             <p>Machine Learning</p>
           </Grid>
           <Grid item xs={12}>
-            <h3>Product Skills</h3>
+            <h2>Product Skills</h2>
           </Grid>
           <Grid item xs={1}>
             <SkillGuage guageValue={95} />
@@ -98,38 +98,38 @@ const Resume = () => {
         <Grid item xs={12}>
           <Grid container xs={12}>
             <Grid item xs={12}>
-              <h1>Experiences & Accomplishments</h1>
+              <h2>Experiences & Accomplishments</h2>
             </Grid>
             <Grid item xs={11}>
-              <h2>Artemis Labor and Production Planning</h2>
+              <h3>Artemis Labor and Production Planning</h3>
               <p>
                 Some discussion of the specific project or accomplishment will
                 go here when I eventually get around to writing all of this out
               </p>
             </Grid>
             <Grid item xs={11}>
-              <h2>R Library Author / Maintainer</h2>
+              <h3>R Library Author / Maintainer</h3>
               <p>
                 Some discussion of the specific project or accomplishment will
                 go here when I eventually get around to writing all of this out
               </p>
             </Grid>
             <Grid item xs={11}>
-              <h2>Final Mile Delivery Performance</h2>
+              <h3>Final Mile Delivery Performance</h3>
               <p>
                 Some discussion of the specific project or accomplishment will
                 go here when I eventually get around to writing all of this out
               </p>
             </Grid>
             <Grid item xs={11}>
-              <h2>Predicting Package Delivery Status</h2>
+              <h3>Predicting Package Delivery Status</h3>
               <p>
                 Some discussion of the specific project or accomplishment will
                 go here when I eventually get around to writing all of this out
               </p>
             </Grid>
             <Grid item xs={11}>
-              <h2>S&OP Network Forecast Modeling</h2>
+              <h3>S&OP Network Forecast Modeling</h3>
               <p>
                 Some discussion of the specific project or accomplishment will
                 go here when I eventually get around to writing all of this out
