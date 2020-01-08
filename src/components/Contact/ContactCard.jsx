@@ -27,7 +27,8 @@ const useStyles = makeStyles({
   },
 });
 
-const ContactCard = () => {
+const ContactCard = props => {
+  const { handleClose } = props;
   const classes = useStyles();
 
   const [values, setValues] = React.useState({
@@ -98,7 +99,9 @@ const ContactCard = () => {
         </Grid>
       </CardContent>
       <CardActions>
-        <Button size="small">Submit</Button>
+        <Button size="small" onClick={handleClose}>
+          Submit
+        </Button>
       </CardActions>
     </Card>
   );

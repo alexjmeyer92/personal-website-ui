@@ -9,9 +9,11 @@ const NavLink = props => (
         return {
           style: {
             backgroundColor: 'rgba(0,0,0,0.3)',
+            color: 'white',
           },
         };
     }}
+    style={{ color: 'white' }}
   />
 );
 
