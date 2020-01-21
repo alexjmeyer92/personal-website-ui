@@ -116,11 +116,13 @@ const Layout = props => {
           className="nav-bar"
           style={{ backgroundColor: 'rgba(255,255,255,1)' }}
         >
-          <img
-            src={Logo}
-            alt="Personal logo"
-            style={{ width: '100px', height: '50px' }}
-          />
+          <a href="/">
+            <img
+              src={Logo}
+              alt="Personal logo"
+              style={{ width: '100px', height: '50px' }}
+            />
+          </a>
           <IconButton
             className={classes.drawerButton}
             aria-label="open top menu drawer"
