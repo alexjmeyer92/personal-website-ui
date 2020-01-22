@@ -5,6 +5,11 @@
  https://reactjsexample.com/vertical-progress-bar-with-bookmarks-support/
  https://reactjsexample.com/vertical-progress-bar-with-bookmarks-support/
 
+ gcloud compute --project \
+    "future-bucksaw-251511" ssh \
+    --zone [backend-zone] \
+    [backend-name]
+
  ############################################################################
  Personal Websites inspiration
  ############################################################################
