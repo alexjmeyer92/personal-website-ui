@@ -13,8 +13,8 @@ import List from '@material-ui/core/List';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import HomeIcon from '@material-ui/icons/Home';
-import MailIcon from '@material-ui/icons/Mail';
-import AssignmentIcon from '@material-ui/icons/Assignment';
+// import MailIcon from '@material-ui/icons/Mail';
+// import AssignmentIcon from '@material-ui/icons/Assignment';
 import ContactCard from '../Contact/ContactCard';
 import Logo from '../../assets/Letters_Logo_Shadow.svg';
 
@@ -44,9 +44,9 @@ const Layout = props => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  // const handleOpen = () => {
+  //   setOpen(true);
+  // };
 
   const handleClose = () => {
     setOpen(false);
@@ -88,18 +88,18 @@ const Layout = props => {
           </ListItemIcon>
           <ListItemText primary="Home" />
         </ListItemLink>
-        <ListItemLink key="resume" href="/resume">
+        {/* <ListItemLink key="resume" href="/resume">
           <ListItemIcon>
             <AssignmentIcon />
           </ListItemIcon>
           <ListItemText primary="Resume" />
-        </ListItemLink>
-        <ListItem button key="contact" onClick={handleOpen}>
+        </ListItemLink> */}
+        {/* <ListItem button key="contact" onClick={handleOpen}>
           <ListItemIcon>
             <MailIcon />
           </ListItemIcon>
           <ListItemText primary="Contact Me" />
-        </ListItem>
+        </ListItem> */}
       </List>
     </div>
   );
