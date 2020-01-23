@@ -51,10 +51,8 @@ const ContactCard = props => {
   };
 
   const createGitIssue = props => {
-    const { issueJson, requestHeader } = props;
-    console.log(requestHeader);
-    console.log(issueJson);
-    const gitToken = 'dd3f2c5683ce37b44e18c2c93c73d4d28a1fd9c2';
+    const { issueJson } = props;
+    const gitToken = 'e873ca2b1bd9b909cc1b87d54a901405423be084';
 
     axios
       .post(
@@ -67,9 +65,6 @@ const ContactCard = props => {
           },
         },
       )
-      .then(function(response) {
-        console.log(response);
-      })
       .catch(function(error) {
         console.log(error);
       });
