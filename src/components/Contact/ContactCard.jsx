@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -35,10 +36,43 @@ const ContactCard = props => {
     firstName: null,
     lastName: null,
     email: null,
+    comments: null,
   });
 
   const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value });
+  };
+  const issueJson = {
+    title: `Contact from ${values.firstName}`,
+    body: `First: ${values.firstName} 
+           Last: ${values.lastName}
+           Email: ${values.email}
+           Notes: ${values.comments}`,
+  };
+
+  const createGitIssue = props => {
+    const { issueJson, requestHeader } = props;
+    console.log(requestHeader);
+    console.log(issueJson);
+    const gitToken = 'dd3f2c5683ce37b44e18c2c93c73d4d28a1fd9c2';
+
+    axios
+      .post(
+        'https://api.github.com/repos/alexjmeyer92/personal-website-ui/issues',
+        issueJson,
+        {
+          auth: {
+            username: 'alexjmeyer92',
+            password: gitToken,
+          },
+        },
+      )
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
   };
 
   return (
@@ -97,9 +131,31 @@ const ContactCard = props => {
             />
           </Grid>
         </Grid>
+        <Grid
+          container
+          spacing={1}
+          direction="row"
+          justify="center"
+          alignItems="stretch"
+        >
+          <TextField
+            id="outlined-comments"
+            label="Comments"
+            value={values.comments}
+            onChange={handleChange('comments')}
+            margin="normal"
+            variant="outlined"
+          />
+        </Grid>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={handleClose}>
+        <Button
+          size="small"
+          onClick={() => {
+            createGitIssue({ issueJson: issueJson });
+            handleClose();
+          }}
+        >
           Submit
         </Button>
       </CardActions>
