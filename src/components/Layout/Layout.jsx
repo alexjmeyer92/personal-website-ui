@@ -16,7 +16,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import MailIcon from '@material-ui/icons/Mail';
 // import AssignmentIcon from '@material-ui/icons/Assignment';
 import ContactCard from '../Contact/ContactCard';
-import Logo from '../../assets/Letters_Logo_Shadow.svg';
+// import Logo from '../../assets/Letters_Logo_Shadow.svg';
 
 const useStyles = makeStyles(theme => ({
   modal: {
