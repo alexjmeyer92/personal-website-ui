@@ -15,16 +15,16 @@ const useStyles = makeStyles({
     left: '50%',
     top: '50%',
     transform: 'translate(-50%, -50%)',
+    width: '80vw',
   },
   title: {
     fontSize: 16,
   },
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
   menu: {
     width: 250,
+  },
+  textField: {
+    width: '90%',
   },
 });
 
@@ -107,14 +107,6 @@ const ContactCard = props => {
               variant="outlined"
             />
           </Grid>
-        </Grid>
-        <Grid
-          container
-          spacing={1}
-          direction="row"
-          justify="center"
-          alignItems="stretch"
-        >
           <Grid item>
             <TextField
               id="outlined-email"
@@ -134,18 +126,22 @@ const ContactCard = props => {
           alignItems="stretch"
         >
           <TextField
+            className={classes.textField}
             id="outlined-comments"
-            label="Comments"
-            value={values.comments}
-            onChange={handleChange('comments')}
+            label="Contact Comments"
+            multiline
+            rows="6"
+            defaultValue="Enter Comments Here"
             margin="normal"
             variant="outlined"
+            value={values.comments}
           />
         </Grid>
       </CardContent>
       <CardActions>
         <Button
-          size="small"
+          variant="contained"
+          color="primary"
           onClick={() => {
             createGitIssue({ issueJson: issueJson });
             handleClose();
