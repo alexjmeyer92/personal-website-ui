@@ -135,6 +135,7 @@ const ContactCard = props => {
             margin="normal"
             variant="outlined"
             value={values.comments}
+            onChange={handleChange('comments')}
           />
         </Grid>
       </CardContent>
